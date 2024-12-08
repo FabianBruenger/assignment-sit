@@ -23,3 +23,18 @@ we place our taxis within the city throughout the day.
 ### Architecture
 
 ![Architecture](architecture_simplified.png)
+
+### Automation
+
+Please see my Pulumi stack here: [Pulumi Stack](2-automation)
+
+### Data Ex-filtration and Infiltration
+
+General rules:
+
+* Host the infrastructure / platform in private networks
+* Use RBAC and PIM to control access to the platform and data for developers (additionally use a VPN gateway)
+* Use managed identity for services to access other services
+* Use Azure Key Vault to store secrets
+* Use Azure Security Center to monitor and protect the platform
+* Verify the public access of the devices to the platform: encrypt the data in transit and handle access

@@ -3,6 +3,8 @@ from pulumi_azure_native import resources
 from pulumi_azure_native import devices
 from iot_hub_devices import adding_devices_based_on_yaml
 
+# Usually there would be a SP for the Pulumi Automation
+
 # Initialize Config for your project
 config = pulumi.Config("azure-native")
 location = config.get("location") or "West Europe"
@@ -30,6 +32,8 @@ iot_hub = devices.IotHubResource("iothub-fb-sit-tmp",
                                         capacity = 1),
                                     properties = devices.IotHubPropertiesArgs(event_hub_endpoints={}),
                                     tags = tags)
+
+# TODO: create access management for the Key Vault regarding IoT Hub and developers
 
 # Add devices to the IoT Hub
 connection_strings = iot_hub.name.apply(adding_devices_based_on_yaml)
