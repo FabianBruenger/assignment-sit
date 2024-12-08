@@ -19,3 +19,7 @@ we place our taxis within the city throughout the day.
     – Think about how to secure the data we are collecting for this use case and the platform in general. What tools and approaches can be used to minimize the risk of unwanted Data Exfiltration or Data Infiltration.
 * Vision
     – Create a vision for the future of our taxi company data platform, what are going to be important pillars and elements that we should focus on in the next 2-3 years.
+
+### Architecture
+
+![Architecture](architecture_simplified.png)
