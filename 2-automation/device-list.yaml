@@ -1,0 +1,5 @@
+germany:
+  - name: taxi-1
+    location: Berlin
+  - name: taxi-2
+    location: Munich
