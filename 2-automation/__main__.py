@@ -3,7 +3,7 @@ from pulumi_azure_native import resources
 from pulumi_azure_native import devices
 from iot_hub_devices import adding_devices_based_on_yaml
 
-# Usually there would be a SP for the Pulumi Automation
+# TODO: Usually there would be a SP for the Pulumi Automation
 
 # Initialize Config for your project
 config = pulumi.Config("azure-native")
