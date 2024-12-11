@@ -49,5 +49,6 @@ connection_strings = iot_hub.name.apply(adding_devices_based_on_yaml)
 # Key Vault Administrator for the Pulumi Service Principal (me)
 role_assignment_kv_pulumi_sp =  an.authorization.RoleAssignment("role-assignment-kv-pulumi-sp", principal_id=principal_id, role_definition_id="/providers/Microsoft.Authorization/roleDefinitions/00482a5a-887f-4fb3-b363-3b7fe8e74483", scope=key_vault.key_vault.id)
 
-
+# ------------------------------------------------------------------        Configuration            ------------------------------------------------------------------
+# TODO: Add function for syncing the connections strings to the key vault
 
